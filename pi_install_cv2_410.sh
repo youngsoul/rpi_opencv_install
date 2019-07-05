@@ -53,9 +53,6 @@ source .virtualenvs/cv2_env/bin/activate
 # took a really long time
 pip3 install numpy
 
-# took so long I gave up
-# sudo pip3 install scipy
-
 cd ~/opencv
 mkdir build
 cd build
