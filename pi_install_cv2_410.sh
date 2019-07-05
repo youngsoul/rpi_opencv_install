@@ -45,7 +45,7 @@ unzip opencv_contrib.zip
 mv opencv-4.1.0/ opencv
 mv opencv_contrib-4.1.0/ opencv_contrib
 
-# you have to make python3.6 env so it uses python3.6 for the build
+# you have to make python3 env so it uses python3 for the build
 mkdir -p .virtualenvs
 python3 -m venv .virtualenvs/cv2_env
 source .virtualenvs/cv2_env/bin/activate
