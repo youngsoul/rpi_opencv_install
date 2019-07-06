@@ -50,7 +50,6 @@ mkdir -p .virtualenvs
 python3 -m venv .virtualenvs/cv2_env
 source .virtualenvs/cv2_env/bin/activate
 
-# took a really long time
 pip3 install numpy
 
 cd ~/opencv
