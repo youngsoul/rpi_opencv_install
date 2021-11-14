@@ -36,6 +36,8 @@ sudo apt-get -y install libatlas-base-dev gfortran
 sudo apt-get -y install python3-dev
 sudo apt-get -y install python3-venv
 
+cd /home/pi
+
 wget -O opencv.zip https://github.com/opencv/opencv/archive/4.5.4.zip
 
 wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.5.4.zip
@@ -74,12 +76,12 @@ sudo make install
 sudo ldconfig
 sudo apt-get -y update
 
-cd ~/opencv/build/lib/python3
-mkdir -p ~/lib/cv2
-cp cv2.cpython-*.so ~/lib/cv2
-ln -s ~/lib/cv2/cv2.cpython-39-arm-linux-gnueabihf.so ~/.virtualenvs/cv2_env/lib/python3.9/site-packages/cv2.so
+cd /home/pi/opencv/build/lib/python3
+mkdir -p /home/pi/lib/cv2
+cp cv2.cpython-*.so /home/pi/lib/cv2
+ln -s /home/pi/lib/cv2/cv2.cpython-39-arm-linux-gnueabihf.so /home/pi/.virtualenvs/cv2_env/lib/python3.9/site-packages/cv2.so
 
-cd ~
+cd /home/pi
 
 # update /etc/dphys-swapfile to increase size
 # set CONF_SWAPSIZE=100
