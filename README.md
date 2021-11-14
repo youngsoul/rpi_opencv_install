@@ -15,6 +15,8 @@ This repo contains 2 files:
 
 - pi_install_cv2_410.sh
 
+- pi_install_cv2_454.sh
+
 - pi_install_imagelibs.sh
 
 While both are structured as shell scripts, these were really used as instructions and each line was run individually.  They might run as complete scripts, but that is not how they were tested.
@@ -27,6 +29,9 @@ These scripts were tested with the 06/20/2019 buster version of Raspbian.  This 
 
 This file contains the instructions to take a base buster raspbian and installs OpenCV 4.1.0.
 
+## pi_install_cv2_454
+
+This file contains the instructions to take a base RaspberryPI OS image and install OpenCV 4.5.4
 
 ## pi_install_imagelibs.sh
 
@@ -80,9 +85,3 @@ execute:
 - python test_mac_receive_images_montage.py
 
 This will receive images from the raspberry pis.
-
-
-
-
-
-
