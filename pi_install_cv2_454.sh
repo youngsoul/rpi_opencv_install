@@ -27,7 +27,7 @@ free -m
 sudo sed -i '$a gpu_mem=128' /boot/config.txt
 
 sudo apt-get -y install build-essential cmake pkg-config
-sudo apt-get -y install libjpeg-dev libtiff-dev libjasper-dev libpng12-dev
+sudo apt-get -y install libjpeg-dev libtiff-dev libjasper-dev
 sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 sudo apt-get -y install libxvidcore-dev libx264-dev
 sudo apt-get -y install libgtk2.0-dev libgtk-3-dev
@@ -54,7 +54,7 @@ mkdir -p .virtualenvs
 python3 -m venv .virtualenvs/cv2_env
 source .virtualenvs/cv2_env/bin/activate
 
-pip3 install numpy
+pip install numpy
 
 cd ~/opencv
 mkdir build

@@ -16,7 +16,6 @@ sudo apt-get install -y libboost-all-dev
 # SOURCE YOUR VIRTUAL ENV
 source .virtualenvs/cv2_env/bin/activate
 
-pip install numpy
 pip install scipy
 pip install scikit-image
 
