@@ -16,12 +16,13 @@ https://www.pyimagesearch.com/2016/01/04/unifying-picamera-and-cv2-videocapture-
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-p", "--picamera", type=int, default=-1,
-	help="whether or not the Raspberry Pi camera should be used")
+
+ap.add_argument("--picamera", action='store_true', help="whether or not the Raspberry Pi camera should be used")
+
 args = vars(ap.parse_args())
 
 # initialize the video stream and allow the cammera sensor to warmup
-vs = VideoStream(usePiCamera=args["picamera"] > 0).start()
+vs = VideoStream(usePiCamera=args["picamera"]).start()
 time.sleep(2.0)
 
 # loop over the frames from the video stream
