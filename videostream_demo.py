@@ -6,6 +6,14 @@ import imutils
 import time
 import cv2
 
+"""
+Credit to PyImageSearch
+
+https://www.pyimagesearch.com/2016/01/04/unifying-picamera-and-cv2-videocapture-into-a-single-class-with-opencv/
+
+
+"""
+
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--picamera", type=int, default=-1,
