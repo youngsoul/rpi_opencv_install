@@ -14,7 +14,7 @@ sudo apt-get install -y libgtk-3-dev
 sudo apt-get install -y libboost-all-dev
 
 # SOURCE YOUR VIRTUAL ENV
-source .virtualenvs/cv2_env/bin/activate
+source /home/pi/.virtualenvs/cv2_env/bin/activate
 
 pip install scipy
 pip install scikit-image
