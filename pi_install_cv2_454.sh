@@ -79,7 +79,7 @@ sudo apt-get -y update
 cd /home/pi/opencv/build/lib/python3
 mkdir -p /home/pi/lib/cv2
 cp cv2.cpython-*.so /home/pi/lib/cv2
-ln -s /home/pi/lib/cv2/cv2.cpython-39-arm-linux-gnueabihf.so /home/pi/.virtualenvs/cv2_env/lib/python3.9/site-packages/cv2.so
+ln -s /home/pi/lib/cv2/cv2.cpython-37m-arm-linux-gnueabihf.so /home/pi/.virtualenvs/cv2_env/lib/python3.7/site-packages/cv2.so
 
 cd /home/pi
 
