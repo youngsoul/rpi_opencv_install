@@ -1,6 +1,8 @@
 # script or instructions to install opencv 4.5.4
-# on raspberry pi with Raspberry PI OS
-# Tested on Nov 13, 2021
+# on raspberry pi with Buster OS
+# THIS WILL NOT WORK WITH LATEST RASPBERRY PI OS because they removed PiCamera
+# support
+# Tested on Nov 15, 2021
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
