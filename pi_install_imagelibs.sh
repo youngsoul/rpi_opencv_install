@@ -1,5 +1,8 @@
 
 # install image libraries to raspberry pi
+# Assumes you have a python virtual environment at
+# ~/.virtualenvs/cv2_env
+# assumes you want to install opencv and contrib from pip
 
 sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
 
