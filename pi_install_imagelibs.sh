@@ -9,12 +9,16 @@ sudo /etc/init.d/dphys-swapfile start
 free -m
 
 sudo apt-get update
+sudo apt-get -y dist-upgrade
 sudo apt-get install -y build-essential cmake
 sudo apt-get install -y libgtk-3-dev
 sudo apt-get install -y libboost-all-dev
 
 # SOURCE YOUR VIRTUAL ENV
 source /home/pi/.virtualenvs/cv2_env/bin/activate
+
+pip install opencv-python
+pip install opencv-contrib-python
 
 pip install scipy
 pip install scikit-image
