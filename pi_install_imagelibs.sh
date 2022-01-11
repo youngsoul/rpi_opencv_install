@@ -21,7 +21,10 @@ sudo apt-get install -y libboost-all-dev
 source /home/pi/.virtualenvs/cv2_env/bin/activate
 
 pip install opencv-python
-pip install opencv-contrib-python
+
+# ONLY INCLUDE THE CONTRIB IF YOU REALLY NEED IT
+# the wheel will take FOREVER to compile
+# pip install opencv-contrib-python
 
 pip install scipy
 pip install scikit-image
