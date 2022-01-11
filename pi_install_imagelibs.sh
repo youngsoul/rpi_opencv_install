@@ -16,6 +16,7 @@ sudo apt-get -y dist-upgrade
 sudo apt-get install -y build-essential cmake
 sudo apt-get install -y libgtk-3-dev
 sudo apt-get install -y libboost-all-dev
+sudo apt-get install -y libatlas-base-dev
 
 # SOURCE YOUR VIRTUAL ENV
 source /home/pi/.virtualenvs/cv2_env/bin/activate
